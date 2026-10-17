@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduMind - Plataforma de Estudo</title>
+    <meta name="description" content="Sistema de login e cadastro de estudantes e professores para a plataforma de estudos EduMind." />
+    <meta property="og:title" content="EduMind - Plataforma de Estudo" />
+    <meta property="og:description" content="Sistema de login e cadastro de estudantes e professores para a plataforma de estudos EduMind." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Ignore Vite HMR WebSocket connection errors as HMR is disabled in this environment
+      window.addEventListener('error', function(event) {
+        var msg = (event && (event.message || '')) + '';
+        var file = (event && (event.filename || '')) + '';
+        if (
+          msg.includes('WebSocket') ||
+          msg.includes('createWebSocketModuleRunnerTransport') ||
+          file.includes('@vite/client')
+        ) {
+          event.preventDefault();
+          if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+          return true;
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var str = (reason && (reason.stack || reason.message || reason) || '') + '';
+        if (
+          str.includes('WebSocket') ||
+          str.includes('createWebSocketModuleRunnerTransport') ||
+          str.includes('@vite/client')
+        ) {
+          event.preventDefault();
+          if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

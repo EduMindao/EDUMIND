@@ -1,0 +1,6 @@
+{
+  "name": "EduMind - Plataforma de Estudo",
+  "description": "Sistema de login e cadastro de estudantes e professores para a plataforma de estudos EduMind.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
